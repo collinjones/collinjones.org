@@ -1,0 +1,50 @@
+body{
+  margin: 0;
+}
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #cfcfcf;
+  overflow-x: hidden;
+  padding-top: 20px;
+  box-shadow: 1px 0px 25px grey;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.navbar{
+  height: 60px;
+  width: 100%;
+  background-color: #cfcfcf;
+  box-shadow: 1px 0px 25px grey;
+}
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+}
+@media all and (max-width: 450px) {
+  .sidenav{
+    display: none !important;
+  }
+  .navbar{
+    display:block;
+  }
+}
+@media all and (min-width: 451px){
+  .sidenav{
+    display:block;
+  }
+  .navbar{
+    display:none !important;
+  }
+}
