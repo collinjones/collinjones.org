@@ -4,6 +4,8 @@ html,body {
   margin: 0;
   padding: 0;
   background-color: #f2f2f2;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* BEGIN NAV & SIDEBAR CSS */
@@ -18,18 +20,18 @@ html,body {
   background-color: #999;
   overflow-x: hidden;
   padding-top: 20px;
-  box-shadow: 1px 0px 25px grey;
+  box-shadow: 1px 0px 15px black;
 }
 .sidenav-content{
   text-align:center;
 }
 .sidenav-content img{
-  box-shadow: 1px 0px 25px grey;
+  box-shadow: 1px 0px 10px black;
   border-radius: 50%;
   height: 175px;
   width: 175px;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 /* desktop side nav bar */
 .sidenav a {
@@ -57,8 +59,9 @@ html,body {
 }
 .navbar-header span {
   font-size: 36px;
-  text-shadow: 10px 10px 25px grey;
+  text-shadow: 10px 10px 25px gray;
   line-height: 1.68;
+  display: inline-block;
 }
 /* mobile navbar bar */
 .navbar-default{
@@ -66,12 +69,15 @@ html,body {
   width: 100%;
   background-color: #999;
   border: none;
-  box-shadow: 1px 0px 25px grey;
+  box-shadow: 1px 0px 5px black;
   font-family: 'Roboto Condensed', sans-serif;
   margin-bottom: 0px;
+  position: fixed;
+  top:0;
 }
 /* mobile hamburger menu icon */
 .navbar-toggle{
+  box-shadow: 1px 0px 25px gray;
   margin-top:14px;
   border: none;
   background-color: #999;
@@ -91,7 +97,7 @@ html,body {
   top:60px; /* sets vertical position (because of position: absolute) */
   width:100%; /* current width of screen */
   -webkit-box-shadow: none; /* removes unwanted shadow line from top of dropdown */
-  z-index: 1; /* brings to front */
+  z-index: 3; /* brings to front */
 }
 /* END NAV & SIDEBAR CSS */
 
@@ -121,18 +127,37 @@ html,body {
   white-space: nowrap;
   padding-top: 15px;
 }
-.content{
+.content-wrapper {
   text-align: center;
   padding-left: 25px;
   padding-right: 25px;
+  overflow: auto;
+  padding-bottom: 30px;
 }
-.content p{
-  font-size: 21px;
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.content-wrapper p{
+  font-size: 18px;
   color: #666;
 }
-.content h2{
+.content-wrapper h2{
   text-align: center;
   font-size: 55px;
+  padding-top: 20px;
+  margin-top:0px;
   /* inset shadows */
   background-color: #565656;
   color: transparent;
@@ -141,19 +166,31 @@ html,body {
   -moz-background-clip: text;
   background-clip: text;
 }
-.content h3{
+.content-wrapper h3{
   text-align: center;
   color: black;
+  font-size: 28px;
 }
-.content img{
+.content-wrapper img{
   padding: 10px;
   height: 100px;
   width: 100px;
 }
-.content table{
+.content-wrapper table{
   margin: auto;
   text-align: center;
-  box-shadow: 1px 1px 25px grey;
+  box-shadow: 1px 1px 10px black;
+}
+.footer{
+  position: relative;
+  /* negative value of footer height */
+  height: 80px;
+  clear: both;
+  background-color: black;
+}
+.footer h1{
+  text-align: center;
+  margin-bottom: 0px;
 }
 
 /* MEDIA QUERIES for Desktop / Mobile integration */
@@ -162,25 +199,22 @@ html,body {
   .sidenav{
     display: none !important;
   }
-  .content{
+  .content-wrapper{
+    margin-top: 60px; /* height of navbar */
     margin-left: 0px;
   }
   .parallax_section{
     margin-left:0px;
   }
   .parallax_image_first{
-    margin-left:0px;
-    height:35%;
-    width:100%;
-    transition: 1s;
-    background-size: 100% 35%;
-  }
-  .navbar{
-    display:block;
+    display: none !important;
   }
   .center{
     font-size: 50px;
     display:none !important;
+  }
+  .footer{
+    margin-left: 0px;
   }
 }
 /* desktop */
@@ -188,26 +222,36 @@ html,body {
   .sidenav{
     display:block;
   }
-  .content{
+  .content-wrapper{
+    margin-top: 0px; 
     margin-left: 200px;
-  }
-  .content{
+    transition: 2s
     font-size: 45px;
-    transition: 1s;
   }
   .parallax_section{
     margin-left: 200px;
   }
   .parallax_image_first{
     margin-left: 200px;
+    max-width: 100%;
     height: 100%;
-    transition: 1s;
+    width: auto;
+    transition: 2s;
     background-size: 100% 100%;
-  }
-  .navbar{
-    display:none !important;
   }
   .center{
     display:block;
+  }
+  .footer{
+    margin-left: 200px;
+  }
+  .navbar-collapse.collapse{
+    display:none !important;
+  }
+  .container-fluid{
+    display: none !important;
+  }
+  .navbar-default{
+    display: none !important;
   }
 }
