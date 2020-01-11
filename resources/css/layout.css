@@ -105,7 +105,6 @@ html,body {
 }
 .parallax_image_first{
   background-image: url("../imgs/birds.JPG");
-  height: 100%;
 }
 .center{
   height: 100px;
@@ -171,8 +170,10 @@ html,body {
   }
   .parallax_image_first{
     margin-left:0px;
-    height:50%;
+    height:35%;
+    width:100%;
     transition: 1s;
+    background-size: 100% 35%;
   }
   .navbar{
     display:block;
@@ -201,6 +202,7 @@ html,body {
     margin-left: 200px;
     height: 100%;
     transition: 1s;
+    background-size: 100% 100%;
   }
   .navbar{
     display:none !important;
