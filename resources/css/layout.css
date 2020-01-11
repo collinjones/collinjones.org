@@ -140,6 +140,7 @@ html,body {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  margin: auto;
 }
 
 .column {
@@ -147,12 +148,15 @@ html,body {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+  margin-right: 10px;
 }
 
 .content-wrapper p{
   font-size: 18px;
   color: #666;
+  height: 50px;
 }
+
 .content-wrapper h2{
   text-align: center;
   font-size: 55px;
