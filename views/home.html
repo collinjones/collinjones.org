@@ -3,24 +3,91 @@
 	<head>
 		<title> Homepage </title>
 		<meta charset="utf-8">
-		<meta name="viewport" conent="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta namee="author" content="COLLIN JONES">
 		<meta name="description" name="landing page for collinjones.org">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">  
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="../resources/css/layout.css"> 
 	</head>
 
 	<body>
-		<div class="navbar">
-
-		</div>
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		    	<span>Collin Jones</span>
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		    </div>
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="./index.jsp">About Me</a></li>
+		        <li><a href="./profile.jsp">Computer Science</a></li>
+		        <li><a href="./profile.jsp">Music</a></li>		     
+		        <li><a href="./profile.jsp">Photography</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
 		
 		<div class="sidenav">
+			<div class="sidenav-content">
+				<img src="../resources/imgs/collin.jpg">
+				<br>
+				<table>
+					<tr>
+						<td><a href="#link">About Me</a></td>
+					</tr>
+					<tr>
+						<td><a href="#link">Computer Science</a></td>
+					</tr>
+					<tr>
+						<td><a href="#link">Music</a></td>
+					</tr>
+						<td><a href="#link">Photography</a></td>
+					</tr>
+				</table>
+			</div>
 		</div>
 
-		<div class="main">
-
+		<div class="parallax_section parallax_image_first">
+			<div class="center">
+				<h1 style="text-align: center">Collin Jones</h1>
+			</div>
 		</div>
-
+		<div class="content">
+			<h2> About me </h2>
+			<p> My name is Collin Jones, and I'm studying to get my BA in Computer Science at the University of Colorado, Boulder.</p>
+			<h3> Proficiencies </h3>
+			<table>
+				<tr>
+					<td><img src="../resources/imgs/js-black.png"></td>
+					<td><img src="../resources/imgs/html5.png"></td>
+					<td><img src="../resources/imgs/css3.png"></td>
+				</tr>
+				<tr>
+					<td><img src="../resources/imgs/php.png"></td>
+					<td><img src="../resources/imgs/MySQL.png"></td>
+					<td><img src="../resources/imgs/postgreSQL.png"></td>
+				</tr>				
+				<tr>
+					<td><img src="../resources/imgs/c.png"></td>
+					<td><img src="../resources/imgs/c++.png"></td>
+					<td><img src="../resources/imgs/python.png"></td>
+				</tr>				
+				<tr>
+					<td><img src="../resources/imgs/aws.png"></td>
+					<td><img src="../resources/imgs/heroku.png"></td>
+					<td><img src="../resources/imgs/git.png"></td>
+				</tr>
+			</table>
+		</div>
 	</body>
 </html>
