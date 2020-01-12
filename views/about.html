@@ -6,13 +6,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="author" content="COLLIN JONES">
 		<meta name="description" name="landing page for collinjones.org">
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">  
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet"> 
+
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-		<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet"> 
+
 		<link rel="stylesheet" type="text/css" href="../resources/css/layout.css"> 
+
 	</head>
 
 	<body >
@@ -29,11 +32,11 @@
 		    </div>
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
-		        <li class="active"><a href="about.html">About Me</a></li>
+		        <li><a id="selected" href="about.html">About Me</a></li>
 		        <li><a href="computerscience.html"></a></li>
 		        <li><a href="music.html">Music</a></li>		     
 		        <li><a href="photography.html">Photography</a></li>
-		        <li><a href="social.html">Social</a></li>
+		        <li><a href="contact.html">Contact</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -43,7 +46,7 @@
 			<br>
 			<table>
 				<tr>
-					<td><a href="about.html">About Me</a></td>
+					<td><a id="selected" href="about.html">About Me</a></td>
 				</tr>
 				<tr>
 					<td><a href="computerscience.html">Computer Science</a></td>
@@ -67,8 +70,8 @@
 		</div>
 
 		<div class="content-wrapper">
-			<h2> About me </h2>
-			<p style="height: 10%"> My name is Collin Jones, and I'm studying to get my BA in Computer Science at the University of Colorado, Boulder. I built this website to showcase some of the things that I do. This is the landing (about me) page.</p>
+			<h2> General Overview </h2>
+			<p style="height: 10%"> My name is Collin Jones, and I'm studying to get my BA in Computer Science at the University of Colorado, Boulder. I built this website to showcase some of the things that I do. This page displays a couple of the things I've done, such as a bit of my music work and my skills.</p>
 		 	<div class='row'>
 		    	<div class='column'>
 					<br>
@@ -114,7 +117,9 @@
 		    </div>
 		</div>
 
-		<div class="footer"><h1> &copy; Collin Jones </h1></div>
+		<div class="footer">
+			<span> &copy; Collin Jones </span>
+		</div>
 	</body>
 
 </html>

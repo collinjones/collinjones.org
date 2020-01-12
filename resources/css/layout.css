@@ -10,18 +10,6 @@ html,body {
 
 /* BEGIN NAV & SIDEBAR CSS */
 /* desktop side navegation column */
-.sidenav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #999;
-  overflow-x: hidden;
-  padding-top: 20px;
-  box-shadow: 1px 0px 15px black;
-}
 .sidenav-content{
   text-align:center;
   height: 100%;
@@ -30,14 +18,14 @@ html,body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #999;
+  background-color: #525252;
   overflow-x: hidden;
   padding-top: 20px;
-  box-shadow: 1px 0px 15px black;
+  box-shadow: 1px 0px 5px black;
 
 }
 .sidenav-content img{
-  box-shadow: 1px 0px 10px black;
+  box-shadow: 1px 1px 5px black;
   border-radius: 50%;
   height: 175px;
   width: 175px;
@@ -50,10 +38,14 @@ html,body {
   padding: 6px 8px 6px 8px;
   text-decoration: none;
   font-size: 25px;
-  color: #555;
+  color: white;
   display: block;
   transition: .20s;
   font-family: 'Hind Siliguri', sans-serif;
+}
+#selected{
+  background-color: white;
+  color: black;
 }
 .sidenav-content a:hover {
   color: #111;
@@ -62,8 +54,7 @@ html,body {
 }
 /* hamburger patties */
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: 
-    #555;
+    background-color: #555;
 }
 .navbar-header{
   height:60px;
@@ -71,14 +62,14 @@ html,body {
 }
 .navbar-header span {
   font-size: 36px;
-  text-shadow: 10px 10px 25px gray;
   line-height: 1.68;
   display: inline-block;
+  color: rgba(255, 255, 255, 0.5);
 }
 /* mobile navbar bar */
 .navbar-default{
   width:100%;
-  background-color: #999;
+  background-color: #525252;
   border: none;
   box-shadow: 1px 0px 5px black;
   font-family: 'Roboto Condensed', sans-serif;
@@ -89,7 +80,6 @@ html,body {
 }
 /* mobile hamburger menu icon */
 .navbar-toggle{
-  box-shadow: 1px 0px 25px gray;
   margin-top:14px;
   border: none;
   background-color: #999;
@@ -152,7 +142,6 @@ html,body {
   padding-top: 15px;
 }
 .content-wrapper {
-  text-align: center;
   padding-left: 25px;
   padding-right: 25px;
   overflow: auto;
@@ -180,7 +169,9 @@ html,body {
 .column td{
   width: 35px;
 }
-
+p{
+  text-align: center;
+}
 .content-wrapper p{
   font-size: 18px;
   color: #666;
@@ -218,19 +209,20 @@ html,body {
 .footer{
   position: relative;
   /* negative value of footer height */
-  height: 80px;
+  height: 40px;
   clear: both;
-  background-color: #888;
+  background-color: #525252;
   box-shadow: 1px 1px 15px gray;
 }
-.footer h1{
+.footer span{
   text-align: center;
   margin-bottom: 0px;
   margin-top: 0px;
-  padding-top:20px;
   color: rgba(255, 255, 255, 0.5);
+  font-size: 26px;
+  display: block;
+  height: 100%; /* height of footer */
 }
-
 /* MEDIA QUERIES for Desktop / Mobile integration */
 /* mobile */
 @media all and (max-width: 600px) {
@@ -245,6 +237,14 @@ html,body {
     height: 350px;
   }
   .parallax_image_first{
+    margin-left: 0px;
+    max-width: 100%;
+    transition: 2s;
+    background-size: contain;
+    z-index: 0;
+    background-position-y: 60px;
+  }
+  .parallax_image_second{
     margin-left: 0px;
     max-width: 100%;
     transition: 2s;
@@ -282,6 +282,14 @@ html,body {
     position: relative;
   }
   .parallax_image_first{
+    margin-left: 200px;
+    max-width: 100%;
+    height: 100%;
+    transition: 2s;
+    background-size: cover;
+    background-position-x: 200px;
+  }  
+  .parallax_image_second{
     margin-left: 200px;
     max-width: 100%;
     height: 100%;
