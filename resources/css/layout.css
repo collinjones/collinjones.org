@@ -12,37 +12,34 @@ html,body {
 /* desktop side navegation column */
 .sidenav-content{
   text-align:center;
-  height: 100%;
-  width: 200px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #525252;
+  background-color:#f2f2f2;
   overflow-x: hidden;
-  padding-top: 20px;
-  box-shadow: 1px 0px 5px black;
 
 }
+.socialbar img{
+  height: 30px !important;
+  width: 30px !important;
+  padding: 5px;
+}
 .sidenav-content img{
-  box-shadow: 1px 1px 5px black;
-  border-radius: 50%;
-  height: 175px;
-  width: 175px;
-  text-align: center;
-  margin-bottom: 15px;
-
+  height: 150px;
+  width: 150px;
 }
 /* desktop side nav bar */
 .sidenav-content a {
   padding: 6px 8px 6px 8px;
   text-decoration: none;
-  font-size: 25px;
-  color: white;
+  font-size: 18px;
+  color: #d6d6d6;
   display: block;
   transition: .20s;
   font-family: 'Hind Siliguri', sans-serif;
 }
+/* selected sidenav link */
 #selected{
   background-color: white;
   color: black;
@@ -69,7 +66,7 @@ html,body {
 /* mobile navbar bar */
 .navbar-default{
   width:100%;
-  background-color: #525252;
+  background-color: #404040;
   border: none;
   box-shadow: 1px 0px 5px black;
   font-family: 'Roboto Condensed', sans-serif;
@@ -102,15 +99,6 @@ html,body {
   z-index: 5; /* brings to front */
 }
 /* END NAV & SIDEBAR CSS */
-
-.parallax_section{
-  height: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: 100% auto;
-  position:relative;
-}
 .parallax_image_first{
   background-image: url("../imgs/birds.JPG");
 }
@@ -118,7 +106,7 @@ html,body {
   background-image: url("../imgs/flatirons.jpg");
 }
 .parallax_image_third{
-  background-image: url("../imgs/.JPG");
+  background-image: url("../imgs/comp.jpg");
 }
 .parallax_image_fourth{
   background-image: url("../imgs/.JPG");
@@ -126,20 +114,15 @@ html,body {
 .parallax_image_fifth{
   background-image: url("../imgs/.JPG");
 }
-.center{
-  height: 100px;
-  opacity: 0.75;
-  background-color: gray;
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  box-shadow: 1px 0px 25px black;
-}
-.center h1{
+.parallax_section h1{
+  margin: 0;
   font-size: 60px;
-  margin:0;
   white-space: nowrap;
-  padding-top: 15px;
+  position: relative;
+}
+.parallax_section_overlay{
+  opacity: 0.25;
+  background: white;
 }
 .content-wrapper {
   padding-left: 25px;
@@ -175,7 +158,7 @@ p{
 .content-wrapper p{
   font-size: 18px;
   color: #666;
-  height: 50px;
+  height: auto;
 }
 
 .content-wrapper h2{
@@ -211,8 +194,7 @@ p{
   /* negative value of footer height */
   height: 40px;
   clear: both;
-  background-color: #525252;
-  box-shadow: 1px 1px 15px gray;
+  background-color:#404040
 }
 .footer span{
   text-align: center;
@@ -223,24 +205,46 @@ p{
   display: block;
   height: 100%; /* height of footer */
 }
+#projects img{
+  min-width: 200px;
+  height: 250px;
+  max-width: 425px;
+  transition: .5s;
+  box-shadow: 1px 1px 15px black;
+  padding: 0;
+}
+#projects img:hover{
+  width: 425px;
+  height: 275px;
+  transition: .5s;
+}
 /* MEDIA QUERIES for Desktop / Mobile integration */
 /* mobile */
 @media all and (max-width: 600px) {
+  #projects img{
+    width: 250px;
+    transition: 1s;
+  }
   .sidenav{
+    transition: 1s;
     display: none !important;
   }
   .content-wrapper{
+    transition: 1s;
     margin-left: 0px;
+    max-height: auto;
   }
   .parallax_section{
+    transition: 1s;
     margin-left:0px;
-    height: 350px;
+    height: auto;
+    background-size: cover;
+
   }
   .parallax_image_first{
     margin-left: 0px;
     max-width: 100%;
     transition: 2s;
-    background-size: contain;
     z-index: 0;
     background-position-y: 60px;
   }
@@ -248,11 +252,18 @@ p{
     margin-left: 0px;
     max-width: 100%;
     transition: 2s;
-    background-size: contain;
+    z-index: 0;
+    background-position-y: 60px;
+  }  
+  .parallax_image_third{
+    margin-left: 0px;
+    max-width: 100%;
+    transition: 2s;
     z-index: 0;
     background-position-y: 60px;
   }
   .center{
+    transition: 1s;
     font-size: 50px;
     display:none !important;
   }
@@ -261,61 +272,92 @@ p{
     transition: 2s;
   }
   .sidenav-content{
+    height:100%;
     width: 0px;
     transition: 2s;
+  }
+  .parallax_section h1{
+    transition: 1s;
+    line-height: 6;
   }
 }
 /* desktop */
 @media all and (min-width: 601px){
+  #projects img{
+    transition: 1s;
+    width: 400px;
+  }
   .sidenav{
+    transition: 1s;
     display:block;
+  }
+  .parallax_section h1{
+    transition: 1s;
+    line-height: 12;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .content-wrapper{
     margin-top: 0px; 
-    margin-left: 200px;
+    margin-left: 150px;
     transition: 2s
     font-size: 45px;
   }
   .parallax_section{
-    margin-left: 200px;
+    transition: 1s;
+    background-attachment: fixed;
+    margin-left: 150px;
     background-size: cover;
     position: relative;
+    background-repeat: no-repeat;
+  }  
+  .parallax_section_overlay{
+    height: 100%;
   }
   .parallax_image_first{
-    margin-left: 200px;
+    margin-left: 150px;
     max-width: 100%;
     height: 100%;
     transition: 2s;
     background-size: cover;
-    background-position-x: 200px;
   }  
   .parallax_image_second{
-    margin-left: 200px;
+    margin-left: 150px;
     max-width: 100%;
     height: 100%;
     transition: 2s;
     background-size: cover;
-    background-position-x: 200px;
+  } 
+  .parallax_image_third{
+    margin-left: 150px;
+    max-width: 100%;
+    height: 100%;
+    transition: 2s;
+    background-size: cover;
   }
   .center{
     display:block;
   }
   .footer{
-    margin-left: 200px;
+    margin-left: 150px;
     transition: 2s;
   }
   .navbar-collapse.collapse{
+    transition: 1s;
     display: none !important;
   }
   .container-fluid{
+    transition: 1s;
     display: none !important;
   }
   .navbar-default{
+    transition: 1s;
     display: none !important;
   }
   .sidenav-content{
     height: 100%;
-    width: 200px;
+    width: 150px;
     transition: 2s;
   }
   .navbar-toggle{
