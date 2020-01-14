@@ -1,0 +1,119 @@
+/* BEGIN NAV & SIDEBAR CSS */
+/* desktop side navegation column */
+.sidenav-content{
+  text-align:center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#404040;
+  overflow-x: hidden;
+  box-shadow: -1px 0px 5px black;
+
+}
+.sidenav-content img{
+  height: 150px;
+  width: 150px;
+}
+/* desktop side nav bar */
+.sidenav-content a {
+  padding: 6px 8px 6px 8px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: .20s;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+.sidenav-content a:hover {
+  color: #111;
+  transition: .20s;
+  background-color: #cecece;
+
+}
+.socialbar a{
+  padding-top:2px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 2px;
+
+}
+.socialbar a:hover{
+  border-radius: 25%;
+}
+.socialbar{
+  margin: 25px;
+}
+.socialbar img{
+  height: 100px !important;
+  width: 100px !important;
+}
+/* selected SIDENAV link */
+#selected{
+  background-color: white;
+  color: black;
+}
+.navbar{
+  min-height: 45px;
+  height: 45px;
+}
+/* hamburger patties */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-header{
+  height:45px;
+  text-align: center;
+}
+.navbar-header span {
+  font-size: 36px;
+  line-height: 1.68;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.5);
+}
+/* mobile navbar bar */
+.navbar-default{
+  width:100%;
+  background-color: #404040;
+  border: none;
+  box-shadow: 1px 0px 5px black;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-bottom: 0px;
+  position: fixed;
+  top:0;
+  z-index: 5;
+}
+.navbar-default .navbar-toggle:hover{
+  background-color: #888;
+}
+.navbar-default .navbar-nav > li > a:hover{
+  color: #999;
+}
+/* mobile hamburger menu icon */
+.navbar-toggle{
+  float: left;
+  margin-left: 15px;
+  border: none;
+  background-color: #ffffff00;
+  -moz-transition: .5s;
+}
+.icon-bar{
+  background-color: #111;
+}
+/* navbar link color */
+.navbar-default .navbar-nav > li > a{
+  color: white;
+}
+.navbar-collapse{
+  font-size: 19px;
+  background-color: #404040;
+  border: none;
+  position: absolute; /* allows object to be translated */
+  top:45px; /* sets vertical position (because of position: absolute) */
+  width:100%; /* current width of screen */
+  -webkit-box-shadow: none; /* removes unwanted shadow line from top of dropdown */
+  z-index: 5; /* brings to front */
+}
+.container-fluid{
+  height: 45px;
+}
