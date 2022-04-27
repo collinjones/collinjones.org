@@ -9,7 +9,7 @@ html,body {
   overflow: scroll;
 }
 .parallax_image_birds{
-  background-image: url("../imgs/my-photos/birds.JPG");
+  background-image: url("../imgs/my-photos/birds.jpg");
 }
 .parallax_image_flatirons{
   background-image: url("../imgs/my-photos/flatirons.jpg");
