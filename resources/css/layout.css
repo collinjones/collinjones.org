@@ -6,21 +6,22 @@ html,body {
   background-color: #f2f2f2;
   max-width: 100%;
   overflow-x: hidden;
+  overflow: scroll;
 }
-.parallax_image_first{
-  background-image: url("../imgs/birds.JPG");
+.parallax_image_birds{
+  background-image: url("../imgs/my-photos/birds.JPG");
 }
-.parallax_image_second{
-  background-image: url("../imgs/flatirons.jpg");
+.parallax_image_flatirons{
+  background-image: url("../imgs/my-photos/flatirons.jpg");
 }
-.parallax_image_third{
-  background-image: url("../imgs/comp.jpg");
+.parallax_image_computer{
+  background-image: url("../imgs/my-photos/comp.jpg");
 }
-.parallax_image_fourth{
-  background-image: url("../imgs/drums.jpg");
+.parallax_image_drums{
+  background-image: url("../imgs/my-photos/drums.jpg");
 }
-.parallax_image_fifth{
-  background-image: url("../imgs/chip.jpg");
+.parallax_image_chip{
+  background-image: url("../imgs/my-photos/chip.jpg");
 }
 .parallax_section h1{
   margin: 0;
@@ -48,11 +49,10 @@ html,body {
 }
 
 .column {
-  display: flex;
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  margin: 10px;
+  margin-right: 20px;
 }
 .column span{
   padding: 5px;
@@ -61,7 +61,7 @@ html,body {
   width: 35px;
 }
 p{
-  text-align: center;
+  text-align: left;
 }
 .content-wrapper p{
   font-size: 18px;
@@ -70,7 +70,6 @@ p{
 }
 
 .content-wrapper h2{
-  text-align: center;
   font-size: 55px;
   padding-top: 20px;
   margin-top:0px;
@@ -83,7 +82,7 @@ p{
   background-clip: text;
 }
 .content-wrapper h3{
-  text-align: center;
+  text-align: left;
   color: black;
   font-size: 28px;
 }
@@ -93,7 +92,6 @@ p{
   width: 100px;
 }
 .content-wrapper table{
-  margin: auto;
   text-align: center;
   box-shadow: 1px 1px 10px black;
 }
@@ -126,8 +124,9 @@ p{
   height: 275px;
   transition: .5s;
 }
+
 /* MEDIA QUERIES for Desktop / Mobile integration */
-/* mobile */
+/* MOBILE */
 @media all and (max-width: 600px) {
   #projects img{
     width: 250px;
@@ -198,7 +197,7 @@ p{
     line-height: 6;
   }
 }
-/* desktop */
+/* == DESKTOP ==  */
 @media all and (min-width: 601px){
   #projects img{
     transition: 1s;
@@ -218,8 +217,8 @@ p{
   .content-wrapper{
     margin-top: 0px; 
     margin-left: 150px;
-    transition: 1s
-    font-size: 45px;
+    transition: 1s;
+    font-size: 15px;
   }
   .parallax_section{
     transition: 1s;
