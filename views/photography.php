@@ -39,50 +39,56 @@ set_navigation_dependencies($current_page_, $title_);
 			</div>
 		</div>
 
+		<!-- CONTENT -->
 		<div class="content-wrapper">
 			<h2> Photography </h2>
-			<p style="height: 10%; padding-left: 0;"> </br> All of the photos on my website are my own. I do a fair bit of astrophotography. I learned photography
-																and astrophotography mostly from YouTube, articles, forum posts, and Reddit. Trevor Jones at astrobackyard.com 
-																has almost everything you would need to get started doing astrophotography with a DSLR and beyond. He has many 
-																inspirational and educational videos about his experiences doing astrophotography in a backyard, which is where 
-																I do my astrophotography as well. 
+			<p style="height: 10%; padding-left: 0;"> </br> All of the photos on this website are my own. I would consider myself an amateur at photography, though 
+															I have always had a passion for it and astronomy, which led to my interest in astrophotography. Below you
+															can view some of my astrophotos as well as some others that I enjoy. 
 															</p></br>
-			<div class="pswp-gallery pswp-gallery--single-column" id="my-gallery">
+			<hr class="dotted">
+			<div style="display: block; text-align: center;" class="pswp-gallery pswp-gallery--single-column" id="my-gallery">
 				<a href="../resources/imgs/my-photos/sadr.jpg" 
 					data-pswp-width="3000" 
 					data-pswp-height="3000" 
 					target="_blank">
-					<img style="height:195px; width:195px;" src="../resources/imgs/my-photos/sadr.jpg" alt="Sadr Region Nebula" />
+					<img src="../resources/imgs/my-photos/sadr.jpg" alt="Sadr Region Nebula" />
 				</a>
 				<a href="../resources/imgs/my-photos/veil.png" 
 					data-pswp-width="2000" 
-					data-pswp-height="2824" 
+					data-pswp-height="2824"
 					target="_blank">
-					<img style="height:195px; width:195px;" src="../resources/imgs/my-photos/veil.png" alt="Eastern Vein Nebula" />
+					<img src="../resources/imgs/my-photos/veil.png" alt="Eastern Vein Nebula" />
 				</a>
 				<a href="../resources/imgs/my-photos/birds.jpg" 
 					data-pswp-width="1920" 
 					data-pswp-height="1080" 
 					target="_blank">
-					<img style="height:195px; width:195px;" src="../resources/imgs/my-photos/birds.jpg" alt="Pelicans on a Log" />
+					<img src="../resources/imgs/my-photos/birds.jpg" alt="Pelicans on a Log" />
 				</a>
 				<a href="../resources/imgs/my-photos/chip.jpg" 
 					data-pswp-width="1920" 
 					data-pswp-height="1080" 
 					target="_blank">
-					<img style="height:195px; width:195px;" src="../resources/imgs/my-photos/chip.jpg" alt="Chipmunk" />
+					<img src="../resources/imgs/my-photos/chip.jpg" alt="Chipmunk" />
 				</a>
 				<a href="../resources/imgs/my-photos/comp.jpg" 
 					data-pswp-width="1920" 
 					data-pswp-height="1080" 
 					target="_blank">
-					<img style="height:195px; width:195px;" src="../resources/imgs/my-photos/comp.jpg" alt="Sea Anemone" />
+					<img src="../resources/imgs/my-photos/comp.jpg" alt="Sea Anemone" />
 				</a>
 				<a href="../resources/imgs/my-photos/flatirons.jpg" 
 					data-pswp-width="1920" 
 					data-pswp-height="1080" 
 					target="_blank">
-					<img style="height:195px; width:195px;" src="../resources/imgs/my-photos/flatirons.jpg" alt="FlatIrons" />
+					<img src="../resources/imgs/my-photos/flatirons.jpg" alt="Flatirons" />
+				</a>
+				<a href="../resources/imgs/my-photos/pinwheel.png" 
+					data-pswp-width="843" 
+					data-pswp-height="843" 
+					target="_blank">
+					<img src="../resources/imgs/my-photos/pinwheel.png" alt="Pinwheel Galaxy" />
 				</a>
 			</div>
     	</div>

@@ -29,6 +29,8 @@ set_navigation_dependencies($current_page_, $title_);
 				<h1 class="banner" style="text-align: center">Collin Jones</h1>
 			</div>
 		</div>
+
+		<!-- CONTENT -->
 		<div class="content-wrapper">
 			<h2> Computer Science </h2>
 		 	<div class='row'>
@@ -40,15 +42,14 @@ set_navigation_dependencies($current_page_, $title_);
 		    	<div id="projects" class='column'>
 		    		<br>
 		    		<h3> Projects </h3>
-		    		<h4 style="text-align: center;"> Recip-Ez </h4><h4 style="text-align: center;" id="live" ></h4>
+		    		<h4 style="text-align: left;"> Recip-Ez </h4><h4 style="text-align: left;" id="live" ></h4>
 
-		    		<p> A recipe filtering app I developed with a couple other students for my software development project.
+		    		<p style="text-align:left;"> A recipe filtering app I developed with a couple other students for my software development project.
 							We designed a relational database and queries that enabled users to search (filter) for recipes based on 
 							the contents of their fridge. The tech stack consists of PHP and MySQL server-side, and HTML, CSS, and JavaScript client-side.
-							The application was deployed on Heroku in conjunction with a cloud databse called ClearDB.</p><br>
-		    		<ul>
-		    			<br>
-							<h4> Tech Stack </h4>
+							The application was deployed on Heroku in conjunction with a cloud databse called ClearDB.</p>
+						<h4> Tech Stack </h4>
+						<ul style="text-align:left; padding-left:15px;">
 		    			<li style="font-size: 16px; font-color: #666">PHP</li>
 		    			<li style="font-size: 16px; font-color: #666">Heroku</li>
 		    			<li style="font-size: 16px; font-color: #666">ClearDB</li>
@@ -57,7 +58,7 @@ set_navigation_dependencies($current_page_, $title_);
 		    		</ul>
 		    		<h4 style="text-align: center;">Click the photo to enter the application</h4>
 		    		<a style="text-align: center;" target="_blank" href="../recip-ez/index.php">
-					<img border="0" alt="Recip-Ez" src="../resources/imgs/icons/recip-ez.png"></a>
+					<img style="display:block; margin:auto;"alt="Recip-Ez" src="../resources/imgs/icons/recip-ez.png"></a>
 		      	</div>
 		    </div>
 		    <div class="row">

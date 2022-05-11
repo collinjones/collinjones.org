@@ -31,14 +31,17 @@ set_navigation_dependencies($current_page_, $title_);
 			</div>
 		</div>
 
+		<!-- CONTENT -->
 		<div class="content-wrapper">
 			<h2> About Me </h2>
-			<p style="height: 10%; padding-left: 0;"> </br>My name is Collin Jones. I'm studying to get my Bachelor's in Computer Science at the University of Colorado, Boulder.
+			<p style="height: 10%; padding-left: 0;"> </br>Thanks for visiting my website! My name is Collin Jones. I'm studying to get my Bachelor's in Computer Science at the University of Colorado, Boulder.
 														I enjoy coding, which is why I designed this website to show some of the things I've made.</p></br><p style="height: 10%; padding-left: 0; min-padding-right: 65%;">
 
 														I play keyboards, including the Piano, Rhodes, Hammond B3 / A100 Organ, Clavinet, and Synthesizers. 
-														I am the keyboard player, audio engineer, and composer for my band Eeloo, based in the Denver area. I also do a lot of 
+														I am the keyboard player, audio engineer, and composer for my band Eeloo, based in the Denver area. I also do some 
 														astrophotography in my backyard, which you can check out on my Photography page. 
+														
+														Please feel free to click around my website and explore. 
 														</p>
 		 	<div class='row'>
 		    	<div class='column'>
