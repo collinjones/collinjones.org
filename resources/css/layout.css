@@ -52,7 +52,8 @@ html,body {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  margin-right: 20px;
+  margin-right: auto;
+  margin-left:auto;
 }
 .column span{
   padding: 5px;
@@ -61,7 +62,7 @@ html,body {
   width: 35px;
 }
 p{
-  text-align: left;
+  text-align: center;
 }
 .content-wrapper p{
   font-size: 18px;
@@ -70,9 +71,11 @@ p{
 }
 
 .content-wrapper h2{
+  text-align: center;
   font-size: 55px;
   padding-top: 20px;
-  margin-top:0px;
+  height: 100px;
+
   /* inset shadows */
   background-color: #565656;
   color: transparent;
@@ -81,8 +84,14 @@ p{
   -moz-background-clip: text;
   background-clip: text;
 }
+
+.profile-badge {
+  margin-left:1px;
+  width: auto !important;
+ }
+
 .content-wrapper h3{
-  text-align: left;
+  text-align: center;
   color: black;
   font-size: 28px;
 }
@@ -92,6 +101,7 @@ p{
   width: 100px;
 }
 .content-wrapper table{
+  margin:auto;
   text-align: center;
   box-shadow: 1px 1px 10px black;
 }

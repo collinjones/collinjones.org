@@ -41,9 +41,6 @@
 .socialbar a:hover{
   border-radius: 25%;
 }
-.socialbar{
-  margin: 25px;
-}
 .socialbar img{
   height: 100px !important;
   width: 100px !important;

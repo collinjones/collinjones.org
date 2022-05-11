@@ -2,8 +2,8 @@
 function display_skills(){
     ?>
     <br>
-    <h3> Skills </h3>
-    <p> Some languages and services that I have experience with. </p>
+    <h3> Skills </h3></br>
+    
     <table style="margin-top: 0;">
         <tr>
             <td><img src="../../resources/imgs/icons/js-black.png"><br><span>JavaScript</span></td>
