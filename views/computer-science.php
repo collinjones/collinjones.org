@@ -48,7 +48,7 @@ set_navigation_dependencies($current_page_, $title_);
 							We designed a relational database and queries that enabled users to search (filter) for recipes based on 
 							the contents of their fridge. The tech stack consists of PHP and MySQL server-side, and HTML, CSS, and JavaScript client-side.
 							The application was deployed on Heroku in conjunction with a cloud databse called ClearDB.</p>
-						<h4> Tech Stack </h4>
+						<h5> Tech Stack </h5>
 						<ul style="text-align:left; padding-left:15px;">
 		    			<li style="font-size: 16px; font-color: #666">PHP</li>
 		    			<li style="font-size: 16px; font-color: #666">Heroku</li>
@@ -57,8 +57,17 @@ set_navigation_dependencies($current_page_, $title_);
 		    			<li style="font-size: 16px; font-color: #666">HTML, CSS, JavaScript</li>
 		    		</ul>
 		    		<h4 style="text-align: center;">Click the photo to enter the application</h4>
-		    		<a style="text-align: center;" target="_blank" href="../recip-ez/index.php">
+		    		<a style="text-align: center; display: block; padding-bottom: 25px;" target="_blank" href="../recip-ez/index.php">
 					<img style="display:block; margin:auto;"alt="Recip-Ez" src="../resources/imgs/icons/recip-ez.png"></a>
+
+					<h4 style="text-align: left;"> This Website </h4><h4 style="text-align: left;" id="live" ></h4>
+					<p style="text-align:left;"> I built this website froms scratch as a way to just further learn HTML, CSS, and a bit of PHP to reduce redundancy. </p>
+						<h4> Tech Stack </h4>
+						<ul style="text-align:left; padding-left:15px;">
+		    			<li style="font-size: 16px; font-color: #666">PHP</li>
+		    			<li style="font-size: 16px; font-color: #666">Heroku</li>
+		    			<li style="font-size: 16px; font-color: #666">HTML, CSS, JavaScript</li>
+		    		</ul>
 		      	</div>
 		    </div>
 		    <div class="row">
