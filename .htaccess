@@ -1,0 +1,3 @@
+ReWriteEngine On
+
+RewriteRule ^views/?$ /something [L]
