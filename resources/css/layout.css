@@ -56,8 +56,9 @@ html,body {
   width: 35px;
 }
 p{
+  padding-top: 10px;
   font-family: 'Avenir', sans-serif;
-  text-align: center;
+  text-align: left;
 }
 
 .content-wrapper {
@@ -79,6 +80,7 @@ p{
   font-size: 60px;
   padding-top: 20px;
   height: 100px;
+  display:table;
 
   /* inset shadows */
   /* background-color: #565656;
@@ -103,7 +105,7 @@ p{
   margin-bottom: auto;
 }
 .content-wrapper img{
-  padding: 10px;
+  padding: 10px 10px 10px 0px;
   height: 100px;
   width: 100px;
 }
@@ -345,7 +347,7 @@ hr.dotted {
 }
 
 h4{
-  font-size: 20px;
+  font-size: 30px;
   font-family: 'Avenir', sans-serif;
 }
 h5{

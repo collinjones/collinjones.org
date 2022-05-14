@@ -34,22 +34,23 @@ set_navigation_dependencies($current_page_, $title_);
 		<!-- CONTENT -->
 		<div class="content-wrapper">
 			<h2> Social </h2>
-		 	<div class='row' style="display: block ruby; text-align: center;">
+			<hr class="dotted">
+		 	<div class='row' style="display: block ruby; text-align: left;">
 				<img src="../resources/imgs/icons/linkedin.png"><h3> <a href="https://www.linkedin.com/in/collinjones1/" target="_blank">LinkedIn </a></h3>
 		    </div>
-			<div class='row' style="display: block ruby; text-align: center;">
+			<div class='row' style="display: block ruby; text-align: left;">
 				<img src="../resources/imgs/icons/youtube.png"><h3> <a href="https://www.youtube.com/channel/UCIfdD-wwi8bqN7oqg9i1gqA" target="_blank">Collin Jones</a></h3>
 		    </div>
-			<div class='row' style="display: block ruby; text-align: center;">
+			<div class='row' style="display: block ruby; text-align: left;">
 				<img src="../resources/imgs/icons/youtube.png"><h3> <a href="https://www.youtube.com/c/Eeloo" target="_blank">Eeloo</a></h3>
 		    </div>
-			<div class='row' style="display: block ruby; text-align: center;">
+			<div class='row' style="display: block ruby; text-align: left;">
 				<img src="../resources/imgs/icons/spotify.png"><h3> <a href="https://open.spotify.com/artist/10cANzulvHoAuSXtHEJzNB?si=SViaFJ6VRuWSDvyos6swKw" target="_blank">Spotify </a></h3>
 		    </div>
-			<div class='row' style="display: block ruby; text-align: center;">
+			<div class='row' style="display: block ruby; text-align: left;">
 				<img src="../resources/imgs/icons/soundcloud.png"><h3> <a href="https://soundcloud.com/collinjonesofficial" target="_blank">Soundcloud </a></h3>
 		    </div>
-			<div class='row' style="display: block ruby; text-align: center;">
+			<div class='row' style="display: block ruby; text-align: left;">
 				<img src="../resources/imgs/icons/twitch.png"><h3> <a href="https://www.twitch.tv/collinjonesofficial" target="_blank">Twitch </a></h3>
 		    </div>
 		</div>

@@ -42,7 +42,7 @@ set_navigation_dependencies($current_page_, $title_);
 		<!-- CONTENT -->
 		<div class="content-wrapper">
 			<h2> Photography </h2>
-			<p style="height: 10%; padding-left: 0;"> </br> All of the photos on this website are my own. I would consider myself an amateur at photography, though 
+			<p style="height: 10%; padding-left: 0;"> All of the photos on this website are my own. I would consider myself an amateur at photography, though 
 															I have always had a passion for it and astronomy, which led to my interest in astrophotography. Below you
 															can view some of my astrophotos as well as some others that I enjoy. 
 															</p></br>

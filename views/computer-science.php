@@ -33,7 +33,11 @@ set_navigation_dependencies($current_page_, $title_);
 		<!-- CONTENT -->
 		<div class="content-wrapper">
 			<h2> Computer Science </h2>
-		 	<div class='row'>
+			<p style="text-align:left;"> This page showcases some of my skills and some of the projects I've made throughout the years.
+										 Please enjoy some of the projects I have developed!</p>
+			<!-- <hr class="dotted"> -->
+			<hr class="dotted">
+			<div class='row'>
 			 	<div class='column'>
 					 <?php
 					display_skills();
@@ -42,7 +46,8 @@ set_navigation_dependencies($current_page_, $title_);
 		    	<div id="projects" class='column'>
 		    		<br>
 		    		<h3> Projects </h3>
-		    		<h4 style="text-align: left;"> Recip-Ez </h4><h4 style="text-align: left;" id="live" ></h4>
+					<hr class="dotted">
+		    		<h4 style="text-align: left;"> Recip-Ez </h4>
 
 		    		<p style="text-align:left;"> A recipe filtering app I developed with a couple other students for my software development project.
 							We designed a relational database and queries that enabled users to search (filter) for recipes based on 
@@ -56,13 +61,16 @@ set_navigation_dependencies($current_page_, $title_);
 		    			<li style="font-size: 16px; font-color: #666">MySQL</li>
 		    			<li style="font-size: 16px; font-color: #666">HTML, CSS, JavaScript</li>
 		    		</ul>
-		    		<h4 style="text-align: center;">Click the photo to enter the application</h4>
+					<h5 style="text-align: center;">Click to Enter</h5>
 		    		<a style="text-align: center; display: block; padding-bottom: 25px;" target="_blank" href="../recip-ez/index.php">
 					<img style="display:block; margin:auto;"alt="Recip-Ez" src="../resources/imgs/icons/recip-ez.png"></a>
-
-					<h4 style="text-align: left;"> This Website </h4><h4 style="text-align: left;" id="live" ></h4>
-					<p style="text-align:left;"> I built this website froms scratch as a way to just further learn HTML, CSS, and a bit of PHP to reduce redundancy. </p>
-						<h4> Tech Stack </h4>
+					<hr class="dotted">
+					<h4 style="text-align: left;"> This Website </h4>
+					<p style="text-align:left;"> I built this website as a way to just further develope my HTML, CSS, and PHP skills. Although 
+												 website could be built without PHP, I decided to use it to reduce redundancy. I've created
+												 several functions which dynamically build certain aspects of the website as well as reduce 
+												 the amount of reused code. </p>
+						<h5> Tech Stack </h5>
 						<ul style="text-align:left; padding-left:15px;">
 		    			<li style="font-size: 16px; font-color: #666">PHP</li>
 		    			<li style="font-size: 16px; font-color: #666">Heroku</li>

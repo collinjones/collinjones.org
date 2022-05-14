@@ -23,6 +23,8 @@ function set_navigation_dependencies($current_page, $title) {
 }
 
 function selected_navbar_html() {
+    // Function that will generate html based on the currently selected page. For the navbar in mobile mode
+
     foreach($GLOBALS['pages'] as $key => $value) {
         if(str_equal($GLOBALS['cur_page'], $value)){
             ?>
@@ -38,6 +40,7 @@ function selected_navbar_html() {
 }
 
 function selected_sidebar_html(){
+    // Function that will generate html based on the currently selected page. For the sidebar in wide mode
 
     foreach($GLOBALS['pages'] as $key => $value){
         if(str_equal($GLOBALS['cur_page'], $value)) {
@@ -81,27 +84,11 @@ function generate_navigation_html(){
     </nav>
     <div class="sidenav-content">
         <a style="padding:0;" href="about.php" ><img src="../resources/imgs/self-portraits/collin2.jpg"></a>
-        <table>
+        <table style="text-align: center;">
             <?php
             selected_sidebar_html();
             ?>
         </table>
-        <div class="socialbar">
-            <table>
-                <tr>
-                    <a target="_blank" href="https://www.linkedin.com/in/collin-jones-67bb36103/"><img src="../resources/imgs/icons/linkedin.png"></a>
-                </tr>
-                <tr>
-                    <a target="_blank" href="https://www.instagram.com/collinjonesofficial/"><img src="../resources/imgs/icons/instagram.png"></a>
-                </tr>
-                <tr>
-                    <a target="_blank" href="https://soundcloud.com/collinjonesofficial"><img src="../resources/imgs/icons/soundcloud.png"></a>
-                </tr>
-                <tr>
-                    <a target="_blank" href="https://www.youtube.com/channel/UCIfdD-wwi8bqN7oqg9i1gqA?view_as=subscriber"><img src="../resources/imgs/icons/youtube.png"></a>
-                </tr>
-            </table>
-        </div>
     </div>
 
     <?php
