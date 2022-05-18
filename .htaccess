@@ -1,7 +1,0 @@
-<ifModule mod_rewrite.c>
-RewriteEngine On
-
-RewriteBase /~username/YOURPath
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ index.php/$1 [NC,QSA,L]
