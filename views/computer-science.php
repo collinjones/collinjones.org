@@ -34,7 +34,7 @@ set_navigation_dependencies($current_page_, $title_);
 		<div class="content-wrapper">
 			<h2> Computer Science </h2>
 			<p style="text-align:left;"> This page showcases some of my skills and some of the projects I've made throughout the years.
-										 Please enjoy some of the projects I have developed!</p>
+										 </p>
 			<!-- <hr class="dotted"> -->
 			<hr class="dotted">
 			<div class='row'>
