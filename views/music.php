@@ -39,12 +39,13 @@ set_navigation_dependencies($current_page_, $title_);
 
 			<hr class="dotted">
 			<h3> Eeloo </h3>
+			<img style="display:block; margin:auto; padding-left: 10px; height: 200px; width: 360px;" src="../resources/imgs/gifs/eeloo.gif" alt="Eeloo Introduction">
 			<p style="height: 10%; padding-left: 0;">  This is my band, Eeloo. We are a jazz fusion / electronic live looping band based in the 
 															Denver area. Tony Wirkus on Bass, Aaron Russo on Drums, and Collin Jones on keys and synths. 
 															I handle the looping aspect of our music with Ableton Live, as well as the recording and mixing of
 															our multi-tracked sessions to then be combined with either multi-angle video recordings or to be 
 															streamed live in conjunction with multiple camera angles. Tony handles all of 
-															the video editing and streaming. 
+															the video editing and streaming. The gif above is one of the animated introductions I created for our videos. 
 				</p></br>
 
 			<iframe style="margin: auto; display: table; min-width: 50%; max-width: 100%; margin-bottom:10px;" width="560" height="315" src="https://www.youtube.com/embed/TwsLkrZyBpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
