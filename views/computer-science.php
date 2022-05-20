@@ -67,7 +67,7 @@ set_navigation_dependencies($current_page_, $title_);
 					<hr class="dotted">
 					<h4 style="text-align: left;"> This Website </h4>
 					<p style="text-align:left;"> I built this website as a way to just further develope my HTML, CSS, and PHP skills. Although 
-												 website could be built without PHP, I decided to use it to reduce redundancy. I've created
+												 this website could be built without PHP, I decided to use it to reduce redundancy. I've created
 												 several functions which dynamically build certain aspects of the website as well as reduce 
 												 the amount of reused code. </p>
 					<h5> Tech Stack </h5>
