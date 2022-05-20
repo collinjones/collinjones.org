@@ -138,11 +138,7 @@ p{
   box-shadow: 1px 1px 15px black;
   padding: 0;
 }
-#projects img:hover{
-  width: 300px;
-  height: 300px;
-  transition: .25s;
-}
+
 
 div .column{
   padding: 25px;

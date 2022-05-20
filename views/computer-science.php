@@ -70,11 +70,20 @@ set_navigation_dependencies($current_page_, $title_);
 												 website could be built without PHP, I decided to use it to reduce redundancy. I've created
 												 several functions which dynamically build certain aspects of the website as well as reduce 
 												 the amount of reused code. </p>
-						<h5> Tech Stack </h5>
-						<ul style="text-align:left; padding-left:15px;">
-		    			<li style="font-size: 16px; font-color: #666">PHP</li>
-		    			<li style="font-size: 16px; font-color: #666">Heroku</li>
-		    			<li style="font-size: 16px; font-color: #666">HTML, CSS, JavaScript</li>
+					<h5> Tech Stack </h5>
+					<ul style="text-align:left; padding-left:15px;">
+					<li style="font-size: 16px; font-color: #666">PHP</li>
+					<li style="font-size: 16px; font-color: #666">Heroku</li>
+					<li style="font-size: 16px; font-color: #666">HTML, CSS, JavaScript</li>
+		    		</ul>
+					<hr class="dotted">
+					<h4 style="text-align: left;"> <a href="https://github.com/collinjones/Checkers/releases/tag/v1.0" target="_blank">Checkers</a> </h4>
+					<p style="text-align:left;"> I built a slightly simpler version of Checkers. The source code and release 
+												 are available to download from my GitHub. Currently only available on Windows. </p>
+					<h5> Tech Stack </h5>
+					<ul style="text-align:left; padding-left:15px;">
+					<li style="font-size: 16px; font-color: #666">C++</li>
+					<li style="font-size: 16px; font-color: #666">Qt Framework</li>
 		    		</ul>
 		      	</div>
 		    </div>
