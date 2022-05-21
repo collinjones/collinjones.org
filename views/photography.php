@@ -2,6 +2,7 @@
 
 require('components/header.php');
 require('components/navigation.php');
+require('components/photography_viewer.php');
 
 $current_page_ = "photography.php";
 $title_ = "Photography";
@@ -48,48 +49,7 @@ set_navigation_dependencies($current_page_, $title_);
 															</p></br>
 			<hr class="dotted">
 			<div style="display: block; text-align: center;" class="pswp-gallery pswp-gallery--single-column" id="my-gallery">
-				<a href="../resources/imgs/my-photos/sadr.jpg" 
-					data-pswp-width="3000" 
-					data-pswp-height="3000" 
-					target="_blank">
-					<img src="../resources/imgs/my-photos/sadr.jpg" alt="Sadr Region Nebula" />
-				</a>
-				<a href="../resources/imgs/my-photos/veil.png" 
-					data-pswp-width="2000" 
-					data-pswp-height="2824"
-					target="_blank">
-					<img src="../resources/imgs/my-photos/veil.png" alt="Eastern Vein Nebula" />
-				</a>
-				<a href="../resources/imgs/my-photos/birds.jpg" 
-					data-pswp-width="1920" 
-					data-pswp-height="1080" 
-					target="_blank">
-					<img src="../resources/imgs/my-photos/birds.jpg" alt="Pelicans on a Log" />
-				</a>
-				<a href="../resources/imgs/my-photos/chip.jpg" 
-					data-pswp-width="1920" 
-					data-pswp-height="1080" 
-					target="_blank">
-					<img src="../resources/imgs/my-photos/chip.jpg" alt="Chipmunk" />
-				</a>
-				<a href="../resources/imgs/my-photos/comp.jpg" 
-					data-pswp-width="1920" 
-					data-pswp-height="1080" 
-					target="_blank">
-					<img src="../resources/imgs/my-photos/comp.jpg" alt="Sea Anemone" />
-				</a>
-				<a href="../resources/imgs/my-photos/flatirons.jpg" 
-					data-pswp-width="1920" 
-					data-pswp-height="1080" 
-					target="_blank">
-					<img src="../resources/imgs/my-photos/flatirons.jpg" alt="Flatirons" />
-				</a>
-				<a href="../resources/imgs/my-photos/pinwheel.png" 
-					data-pswp-width="843" 
-					data-pswp-height="843" 
-					target="_blank">
-					<img src="../resources/imgs/my-photos/pinwheel.png" alt="Pinwheel Galaxy" />
-				</a>
+				<?php loadImgs(); ?>
 			</div>
     	</div>
 
